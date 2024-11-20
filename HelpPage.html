@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvidha Foundation</title>
+    <link rel="stylesheet" href="Hstyles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="SuvidhaLogo.png" alt="Suvidha Foundation Logo">
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="HomePage.html">Home</a>
+                <a href="Events.html">Events</a>
+                <a href="Gallary.html">Gallery</a>
+                <a href="Donars.html">Our Donors</a>
+                <a href="Contact.html">Contact</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4vDnye2muE9yynJek6Swvamie2Idbu-LWAhQa0oMus5KJDg/viewform" class="button primary">Apply For Internship</a>
+                <a href="HelpPage.html" class="button secondary">Help Now</a>
+            </nav>
+
+            <!-- Mobile Menu Icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="payment-section">
+        <h1>Support Suvidha Foundation</h1>
+        <p>Suvidha Foundation invites individuals, foundations, and corporations to contribute in support of our various educational and outreach initiatives. Your donations help us fund critical programs and make a lasting impact on communities in need.</p>
+        <p class="tax-info">Donors are eligible to claim tax benefits under Section 80G of the Income Tax Act.</p>
+        <div class="donation-options">
+            <button class="donation-button">₹ 2000</button>
+            <button class="donation-button">₹ 5000</button>
+            <button class="donation-button">₹ 10000</button>
+            <button class="donation-button">₹ 15000</button>
+            <button class="donation-button">₹ 20000</button>
+            <button class="donation-button">Any Other Amount</button>
+        </div>
+        <div class="account-details">
+            <div class="account-info">
+                <h2>For Indian Donors</h2>
+                <p><strong>Bank:</strong> Bank of Baroda</p>
+                <p><strong>City:</strong> Nagpur</p>
+                <p><strong>Contact No:</strong> +91 8010996763</p>
+                <p><strong>Account Name:</strong> Suvidha Mahila Mandal</p>
+                <p><strong>Account No:</strong> 97840100027609</p>
+                <p><strong>IFSC Code:</strong> BARB0DBKPAR</p>
+            </div>
+            <div class="qr-code">
+                <h3>Scan to Pay</h3>
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/google-payment-qr-code-template-design-f00259ea89eb7cc0f6cc20bd8967a639_screen.jpg?ts=1702881345" alt="QR Code">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">
+        <img src="GoToTop_Img.png" alt="Go to Top" class="scroll-icon">
+    </button>
+    
+    <!-- -----------------footer section--------------------------- -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Organization Info -->
+            <div class="footer-column">
+                <h3>Suvidha Foundation (Suvidha Mahila Mandal)</h3>
+                <p><strong>Nagpur Headquarter:</strong></p>
+                <p>Suvidha Foundation, Motghare Bhavan, Ward No. 4, Santnagar, Annamod, Near Water Tank, Khaperkheda, Saoner, Nagpur, Maharashtra, India - 441102</p>
+                <p><strong>Hyderabad Headquarter:</strong></p>
+                <p>Vazhra Nirman Pushpak, C Block 701, 500090, Hyderabad</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!-- Certificates -->
+            <div class="footer-column">
+                <h4>Certificates</h4>
+                <ul>
+                    <li><a href="#">80G Certificate</a></li>
+                    <li><a href="#">12A Certificate</a></li>
+                    <li><a href="#">CSR Certificate</a></li>
+                    <li><a href="#">Suvidha Darpan Registration</a></li>
+                    <li><a href="#">Suvidha Pan Card</a></li>
+                </ul>
+            </div>
+    
+            <!-- Useful Links -->
+            <div class="footer-column">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Verify Your Certificate</a></li>
+                    <li><a href="#">Free Kids Coding Bootcamp</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; Suvidha Foundation (Suvidha Mahila Mandal). All Rights Reserved.</p>
+            <p>By Vinayak Gupta[RUIA CS Student]</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+let lastScrollTop = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        // Scroll Down
+        navbar.style.top = "-100px"; // Hides the navbar
+    } else {
+        // Scroll Up
+        navbar.style.top = "0"; // Shows the navbar
+    }
+    lastScrollTop = scrollTop;
+});
+
+/* --------------------GoToTopButtonJsCode------------------------------- */
+// Get the button
+let scrollBtn = document.getElementById("scrollBtn");
+
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+};
+
+// Scroll to the top of the document when the user clicks the button
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+
+</body>
+</html>

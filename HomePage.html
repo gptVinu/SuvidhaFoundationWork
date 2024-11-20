@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvidha Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- --------for counters -------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="SuvidhaLogo.png" alt="Suvidha Foundation Logo">
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="Events.html">Events</a>
+                <a href="Gallary.html">Gallery</a>
+                <a href="Donars.html">Our Donors</a>
+                <a href="Contact.html">Contact</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4vDnye2muE9yynJek6Swvamie2Idbu-LWAhQa0oMus5KJDg/viewform" class="button primary">Apply For Internship</a>
+                <a href="HelpPage.html" class="button secondary">Help Now</a>
+            </nav>
+
+            <!-- Mobile Menu Icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- -----------------main corousal section-------------------- -->
+    <div class="carousel-container">
+        <div class="carousel-slide" id="carousel-slide">
+          <!-- Carousel items will be dynamically generated here -->
+        </div>
+      
+        <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+      
+        <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+    
+    <!-- ----------------------about section-------------------------- -->
+    <section class="about-section">
+        <div class="container">
+           <div class="about-heading">
+               <h1>Learn About Us</h1>
+               <h2>Suvidha Foundation (Suvidha Mahila Mandal)</h2>
+           </div>
+           <div class="about-content">
+               <!-- Image Section -->
+               <div class="about-image">
+                   <img src="https://suvidhafoundationedutech.org/img/about.jpg" alt="Suvidha Foundation">
+               </div>
+               <!-- Text Content Section -->
+               <div class="about-text">
+                   <!-- Section 1 - About -->
+                   <div class="section about">
+                       <h3>About...</h3>
+                       <p>Suvidha Mahila Mandal, established on September 8, 1995, is a non-profit organization working to impart education among the financially challenged sections to help them realize parity in education and the strength of little minds in building a promising future. The organization has provisions for student internships, mentorship, and volunteering. Through these programs, it aims to achieve the vision of imparting innovative education that stays with the students forever and equips them for the unforeseen future.</p>
+                   </div>
+                   <!-- Section 2 - Mission -->
+                   <div class="section mission">
+                       <h3>Mission...</h3>
+                       <p>To Inspire Students, help them Innovate, and let them Integrate to build the next generation of humankind. To Run Food Donation and Awareness Campaigns in Rural Regions.</p>
+                   </div>
+                   <!-- Section 3 - Vision -->
+                   <div class="section vision">
+                       <h3>Vision...</h3>
+                       <p>To build the Next Generation of Entrepreneurs by providing them with Skill-Based Education. To provide Internships, Training, Workshops, and Quality Education all over the world.</p>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- -------------------causes section---------------------------- -->
+    <section class="causes-section">
+        <h2>What We Do?</h2>
+        <h3>Causes for a Sustainable Future</h3>
+        <div class="causes-container">
+            <div class="cause-card">
+                <div class="icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h4>Healthy Food</h4>
+                <p>By focusing on healthy food donations, we aim to improve the quality of life for communities in need.</p>
+            </div>
+            <div class="cause-card">
+                <div class="icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h4>Social Awareness</h4>
+                <p>We conduct awareness campaigns to facilitate access to hygiene and create a healthier environment.</p>
+            </div>
+            <div class="cause-card">
+                <div class="icon">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <h4>Tree Plantation</h4>
+                <p>Through community engagement, we successfully plant trees to foster a greener and healthier ecosystem.</p>
+            </div>
+            <div class="cause-card">
+                <div class="icon">
+                    <i class="fas fa-notes-medical"></i>
+                </div>
+                <h4>Health Care</h4>
+                <p>We work to ensure healthcare services are accessible, affordable, and of high quality for those in need.</p>
+            </div>
+            <div class="cause-card">
+                <div class="icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h4>Primary Education</h4>
+                <p>We aim to empower children with knowledge and skills needed for a brighter future.</p>
+            </div>
+            <div class="cause-card">
+                <div class="icon">
+                    <i class="fas fa-people-arrows"></i>
+                </div>
+                <h4>Social Care</h4>
+                <p>Our programs include counseling, vocational training, and advocacy to empower individuals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------coounter section----------------------- -->
+    <section class="counters-section">
+        <div class="overlay">
+            <div class="counter-container">
+                <div class="counter-box">
+                    <i class="fas fa-globe"></i>
+                    <h3><span class="counter">15</span>+</h3>
+                    <p>Countries</p>
+                </div>
+                <div class="counter-box">
+                    <i class="fas fa-users"></i>
+                    <h3><span class="counter">300000</span>+</h3>
+                    <p>Volunteers</p>
+                </div>
+                <div class="counter-box">
+                    <i class="fas fa-briefcase"></i>
+                    <h3><span class="counter">10000000</span>+</h3>
+                    <p>Internship Goal</p>
+                </div>
+                <div class="counter-box">
+                    <i class="fas fa-tree"></i>
+                    <h3><span class="counter">5400000</span>+</h3>
+                    <p>Trees Planted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- -------------------------teamHead Section------------------------------- -->
+    <div class="team-heading">
+        <h1>Meet Our Team</h1>
+        <h2>Guys behind our charity <br>activities</h2>
+    </div>
+    <div class="home-container">
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://suvidhafoundationedutech.org/img/team/Shobha_Motghare.jpeg" alt="Person 1">
+            </div>
+            <div class="caption">
+                <h3>Shobha Motghare</h3>
+                <p>Secretary</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://suvidhafoundationedutech.org/img/team/Payal_Badhe.jpg" alt="Person 2">
+            </div>
+            <div class="caption">
+                <h3>Payal Badhe</h3>
+                <p>President</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://suvidhafoundationedutech.org/img/Bharti_Shendre.jpg" alt="Person 3">
+            </div>
+            <div class="caption">
+                <h3>Bharti Shendre</h3>
+                <p>Treasurer</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="https://suvidhafoundationedutech.org/img/Nilima_Kalambe.jpg" alt="Person 4">
+            </div>
+            <div class="caption">
+                <h3>Nilima Kalambe</h3>
+                <p>Advisor</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------------------testimonial section-------------------------- -->
+    <section class="testimonial-slider">
+        <div class="testimonial-heading">
+            <h1>Testimonial</h1>
+            <h3>What people are talking about</h3>
+            <h3>our charity activities</h3>
+        </div>
+        <div class="slider">
+          <figure class="snip1390">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" class="profile" />
+            <figcaption>
+              <blockquote>
+                <h2>Eleanor Crisp</h2>
+                <h4>UX Design</h4>
+              </blockquote>
+              <p>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</p>
+            </figcaption>
+          </figure>
+          <figure class="snip1390">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" />
+            <figcaption>
+              <blockquote>
+                <h2>Gordon Norman</h2>
+                <h4>Accountant</h4>
+              </blockquote>
+              <p>Wormwood: Calvin, how about you? Calvin: Hard to say ma'am. I think my cerebellum has just fused.</p>
+            </figcaption>
+          </figure>
+          <figure class="snip1390">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample6" class="profile" />
+            <figcaption>
+              <blockquote>
+                <h2>Sue Shei</h2>
+                <h4>Public Relations</h4>
+              </blockquote>
+              <p>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</p>
+            </figcaption>
+          </figure>
+          <figure class="snip1390">
+            <img src="https://images.pexels.com/photos/4342098/pexels-photo-4342098.jpeg?auto=compress&cs=tinysrgb&w=800" alt="profile-sample7" class="profile" />
+            <figcaption>
+              <blockquote>
+                <h2>Anna Smith</h2>
+                <h4>Software Engineer</h4>
+              </blockquote>
+              <p>Code, sleep, repeat. My mantra for life and innovation.</p>
+            </figcaption>
+          </figure>
+          <figure class="snip1390">
+            <img src="https://images.pexels.com/photos/4342400/pexels-photo-4342400.jpeg?auto=compress&cs=tinysrgb&w=800" alt="profile-sample8" class="profile" />
+            <figcaption>
+              <blockquote>
+                <h2>John Doe</h2>
+                <h4>Marketing Expert</h4>
+              </blockquote>
+              <p>Creativity is intelligence having fun – that's how I roll.</p>
+            </figcaption>
+          </figure>
+          <figure class="snip1390">
+            <img src="https://images.pexels.com/photos/5325105/pexels-photo-5325105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="profile-sample9" class="profile" />
+            <figcaption>
+              <blockquote>
+                <h2>Lisa Ray</h2>
+                <h4>Graphic Designer</h4>
+              </blockquote>
+              <p>Designing is not just a profession, it's my way of life.</p>
+            </figcaption>
+          </figure>
+        </div>
+    </section>
+
+    <div class="team-heading">
+        <h2>Empowering Change Together: <br>Our Collaborative Initiatives</h2>
+    </div>
+    <section class="logo-slider">
+        <div class="logo-slider-container">
+          <div class="logo-slider-item">
+            <img src="https://suvidhafoundationedutech.org/img/Goodera.png" alt="Logo 1">
+          </div>
+          <div class="logo-slider-item">
+            <img src="https://suvidhafoundationedutech.org/img/collab-5.png" alt="Logo 2">
+          </div>
+          <div class="logo-slider-item">
+            <img src="https://suvidhafoundationedutech.org/img/collab-4.png" alt="Logo 3">
+          </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">
+        <img src="GoToTop_Img.png" alt="Go to Top" class="scroll-icon">
+    </button>
+    
+    <!-- -----------------footer section--------------------------- -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Organization Info -->
+            <div class="footer-column">
+                <h3>Suvidha Foundation (Suvidha Mahila Mandal)</h3>
+                <p><strong>Nagpur Headquarter:</strong></p>
+                <p>Suvidha Foundation, Motghare Bhavan, Ward No. 4, Santnagar, Annamod, Near Water Tank, Khaperkheda, Saoner, Nagpur, Maharashtra, India - 441102</p>
+                <p><strong>Hyderabad Headquarter:</strong></p>
+                <p>Vazhra Nirman Pushpak, C Block 701, 500090, Hyderabad</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    
+            <!-- Certificates -->
+            <div class="footer-column">
+                <h4>Certificates</h4>
+                <ul>
+                    <li><a href="#">80G Certificate</a></li>
+                    <li><a href="#">12A Certificate</a></li>
+                    <li><a href="#">CSR Certificate</a></li>
+                    <li><a href="#">Suvidha Darpan Registration</a></li>
+                    <li><a href="#">Suvidha Pan Card</a></li>
+                </ul>
+            </div>
+    
+            <!-- Useful Links -->
+            <div class="footer-column">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Verify Your Certificate</a></li>
+                    <li><a href="#">Free Kids Coding Bootcamp</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; Suvidha Foundation (Suvidha Mahila Mandal). All Rights Reserved.</p>
+            <p>By Vinayak Gupta[RUIA CS Student]</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+
+</body>
+</html>
